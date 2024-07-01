@@ -1,1 +1,43 @@
+        body{
+        height: 3000px;
+      }
+      .overlay{
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        background-color: rgba(0,0,0,0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
+      .sidebar{
+        background-color: green;
+        color: white;
+        position: fixed;
+        right: 0px;
+        top:0px;
+        width: 100px;
+        bottom: 0px;
+      }
+
+
+      .container-modal{
+        height: 130px;
+        width: 450px;
+        background-color: white;
+        padding-left: 12px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+      }
+
+      .container-modal-title{
+        font-family: arial;
+      }
+
+      .modal-t{
+        font-size: 20px;
+        font-weight: bold;
+      }
