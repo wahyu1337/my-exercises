@@ -11,6 +11,7 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgb(228, 228, 228);
+  z-index: 100;
  }
 
  .left-section {
@@ -56,6 +57,42 @@
   border-color: rgb(192, 191, 191);
   margin-left: -1px;
   margin-right: 10px;
+  
+ }
+
+ .search-button,
+ .voice-button,
+ .upload-icon-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+ }
+
+ .search-button .tooltip,
+ .voice-button .tooltip,
+ .upload-icon-container .tooltip{
+  font-family: Roboto, arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom:-30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+ }
+
+ .search-button:hover .tooltip,
+ .voice-button:hover .tooltip,
+ .upload-icon-container:hover .tooltip{
+  opacity: 1;
  }
  .search-button-img {
   height:25px;
@@ -71,8 +108,8 @@
  }
 
 .voice-button-img{
-  height: 24px;
-  margin-top: 4px;
+  height: 25px;
+
 }
 
  .search {
@@ -104,6 +141,25 @@
  .notifications-icon {
   height: 24px;
  }
+
+ .notifications-icon-container{
+  position: relative;
+ }
+
+.notifications-count{
+  position: absolute;
+  top:-2px;
+  right: -5 px;
+  background-color: rgb(202, 0, 0);
+  color: white;
+  font-family: Roboto,arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;  
+}
 
  .current-user-picture {
   height: 32px; 
