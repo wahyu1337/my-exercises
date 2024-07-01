@@ -3,18 +3,20 @@ body{
 }
 .sidebar1{
 position: fixed;
-background-color: rgb(29, 28, 28);
+background-color: rgb(33, 33, 33);
 color: white;
 left: 0px;
 bottom: 0px;
 top: 0px;
-width: 70px;
+width: 75px;
+padding-top: 15px;
 }
 
 .profile-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 8px;
 }
 
 .profile-image{
@@ -26,9 +28,46 @@ width: 70px;
 
 .sidebar2{
   position: fixed;
-  background-color: gray;
-  left: 70px;
+  background-color: rgb(55, 55, 55);
+  left: 75px;
   top: 0px;
   bottom: 0px;
-  width: 200px;
+  width: 175px;
+}
+
+.top-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 8px;
+}
+.top-title-style{
+  font-family: arial;
+  font-size: 14px;
+}
+
+.plus-style{
+  border: none;
+  color: rgb(150,150,150);
+  font-size: 25px;
+  background-color: none;
+  font-weight: bold;
+}
+
+.plus-style:hover{
+  cursor: pointer;
+}
+.status-container{
+  color: rgb(150,150,150);
+  font-size: 14px;
+  padding-left: 15px;
+  font-family: arial;
+  margin-bottom: 16px;
+}
+
+.status-container:hover{
+  cursor: pointer;
 }
